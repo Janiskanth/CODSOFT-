@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Task2 {
+
+	public static void main(String[] args) {
+		
+		double totalMarks = 0;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Enter the Number of Total Subject:");
+		int noSubject = scan.nextInt();
+		System.out.println("");
+		
+		System.out.println("Entyer the Marks for Each Subject...");
+		for (int i = 1; i <=noSubject; i++) {
+			
+			System.out.println("Subject " + i + " : ");
+			double marks = scan.nextDouble();
+			totalMarks+=marks;
+		}
+		System.out.println(totalMarks);
+	}
+
+}

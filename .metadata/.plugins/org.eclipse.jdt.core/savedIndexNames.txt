@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+D:\Janis\CodeSoft\.metadata\.plugins\org.eclipse.jdt.core
+3413270776.index
+3957953841.index
+2632885671.index
+99087389.index
+1865797976.index

@@ -1,0 +1,64 @@
+import java.util.Scanner;
+public class ATM {
+
+	Account acc = new Account();
+	public static void main(String[] args) {
+		
+		ATM atm = new ATM();
+		Scanner scan = new Scanner(System.in);
+		System.out.println("=================================================");
+		System.out.println("Welcome to ATM Mechine");
+		System.out.println("Withdraw: 1 \nDepositing: 2 \nBalance Check: 3");
+		System.out.println("Enter the Option: ");
+		int opt = scan.nextInt();
+		
+		switch (opt) {
+		
+		case 1: {
+			
+			System.out.println("Enter the Withdraw Amount: ");
+			int amount = scan.nextInt();
+			atm.withdraw(amount);
+			break;
+		}
+		case 2: {
+			System.out.println("Enter the Deposit Amount: ");
+			int amount = scan.nextInt();
+			atm.deposit(amount);
+			break;
+		}
+		case 3 : {
+			atm.balanceCheck();
+		}
+		default: {
+			System.out.println("Invalid Input");
+			break;
+		}
+		}
+
+		
+
+	}
+	public void withdraw(int amount) {
+
+		if (acc.getBalance() < amount) {
+			System.out.println("Insufficient funds. Withdrawal failed.");
+		}
+		else {
+			acc.withdraw(amount);
+			System.out.println("Withdrawal successful");
+		}
+	}
+	public void deposit(int amount ) {
+		
+		acc.deposit(amount);
+		System.out.println("Deposit successful");
+	}
+	public void balanceCheck() {
+		
+		System.out.println("Current Balance is " + acc.getBalance());
+	}
+	
+	
+	
+}

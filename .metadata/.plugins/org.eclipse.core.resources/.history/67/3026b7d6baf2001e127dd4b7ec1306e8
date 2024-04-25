@@ -1,0 +1,7 @@
+
+public class Account {
+
+	private double balance = 10000.00;
+	
+
+}

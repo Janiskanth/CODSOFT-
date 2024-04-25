@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Task1 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("***Welcome to Number Gussing Game***");
+		System.out.println("");
+		System.out.println("");
+		System.out.print("Enter the your Guess Number:");
+
+	}
+
+}

@@ -1,0 +1,21 @@
+
+public class Account {
+
+	private double balance;
+	
+	public double getBalance() {
+		
+		return this.balance;
+	}
+	
+	public double withdraw(int amount) {
+		
+		return this.balance-amount;
+	}
+	public double deposit(int amount) {
+		
+		return this.balance+amount;
+	}
+	
+
+}

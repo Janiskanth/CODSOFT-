@@ -1,0 +1,8 @@
+
+public class Account {
+
+	private String name = "Janiskanth";
+	private double amount = 10000.00;
+	
+
+}

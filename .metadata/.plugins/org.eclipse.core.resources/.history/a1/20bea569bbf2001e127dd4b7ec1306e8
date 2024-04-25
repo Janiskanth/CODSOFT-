@@ -1,0 +1,7 @@
+
+public class Account {
+
+	public double balance = 10000.00;
+	
+
+}

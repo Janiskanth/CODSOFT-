@@ -1,0 +1,14 @@
+
+public class Account {
+
+	private double balance;
+	
+	public double getBalance() {
+		
+		retrun this.balance;
+	}
+	
+	
+	
+
+}

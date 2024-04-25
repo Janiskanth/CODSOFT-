@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class ATM {
+
+	Account acc = new Account();
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Withdraw: 1 \nDepositing: 2 \nBalance Check: 3");
+		System.out.println("Enter the Option: ");
+		int opt = scan.nextInt();
+
+		
+
+	}
+	public void withdraw(int amount) {
+
+		
+	}
+	public void deposit(int amount ) {
+		
+	}
+	public void balanceCheck() {
+		
+		acc.getBalance();
+	}
+	
+	
+	
+}
